@@ -1,9 +1,10 @@
 function delete_all(){
-    if(!confirm("Are you sure you want to delete everything?? data can't be restored anymore!!!")){
+    if(confirm("Are you sure you want to delete everything?? data can't be restored anymore!!!")){
         fetch("/jobs",{method:"DELETE"})
         .then(function(response){
             load_jobs(current_search, current_status)
         })
+
     }
 }
     
