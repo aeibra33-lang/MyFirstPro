@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+        <h1 id="title">Welcome to Job Tracker</h1>
+        <input type="text"  id="search-field" placeholder="Search jobs...">
+        <button id="search-btn">Search</button>
+        <button id="clear-search-btn" hidden="true">Clear Search</button>
+        <br><br>
+        <label>Filter by status</label>
+        <select id="status-filter">
+            <option value="">All</option>
+            <option value="Interview">Interview</option>
+            <option value="Accepted">Accepted</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Offer">Offer</option>
+        </select>
+        <br><br>
+        <button id="delete-all-btn" onclick="delete_all()">DELETE ALL</button>
+        <br><br>
+        <form id="job-form">
+            <label>Company</label>
+            <input type="text" id="company">
+            <label>Location</label>
+            <input type="text" id="location">
+            <label>Role</label>
+            <input type="text" id="role">
+            <label>Salary</label>
+            <input type="number" id="salary">
+            <label>Status</label>
+            <select id="status">
+                <option value="Interview">Interview</option>
+                <option value="Accepted">Accepted</option>
+                <option value="Rejected">Rejected</option>
+                <option value="Offer">Offer</option>
+            </select>
+            <button id="submit-btn" type="submit">Add Job</button>
+            <button id="cancel-btn" type="button" hidden>CANCEL</button>
+        </form>
+        <p id="error-message"></p>
+        <div id="jobs-container"></div>
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>
+
+
+            
+
+                
+          
+            
+
+               
+
+
+
+
+
+
+
+                
+                
+                
+            
+            
+            
+
+
+
+
+                        
+                        
+                    
+                                
+       
+                
+                
+                
+                
+                                
+                                
+                           
+
+                
+                   
+                    
+            
+            
+        
+    
+    
+    
+
+
+                
+
+                                    
+                
+                                        
+                                        
+                   
+                                                                
+                                            
+                                          
+
+                                                            
+                                   
+                                            
+                                                                                            
+   
+                           
+                   
+                    
+    
+
+
+          
+            
+                       
+
